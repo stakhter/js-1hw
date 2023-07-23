@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Js script HW-1</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+      <!-- text change -->
+      <div class="container">
+        <h1 class="text-danger">Click the button to change the text</h1>
+        <button type="button" class="btn btn-dark my-2" onclick="textChange()">Text change</button>
+        <h2 id="h2">Hello  world</h2>
+      </div>
+
+        <!--show date -->
+        <div class="container">
+          <h1 class="text-danger">Click the button to show the date</h1>
+          <button type="button" class="btn btn-dark" onclick="showDate()">Show date</button>
+          <h2 id="dh2">Date</h2>
+        </div>
+        <!-- variable repeat ex-->
+        <div class="container">
+          <h1 class="text-danger">Click the button to repeat message</h1>
+          <button type="button" class="btn btn-dark" onclick="dataRepeat()">Repeat Message</button>
+          <h2 id="dr"></h2>
+        </div>
+        <!-- bulb on/off -->
+        <div class="container">
+          <h1 class="text-danger">Click the button to on/off the bulb</h1>
+          <button type="button" class="btn btn-success" onclick="bulbOn()">On</button>
+              <img id="bulb" src="images/bulboff.gif" alt="">
+          <button type="button" class="btn btn-dark" onclick="bulbOff()">Off</button>
+        </div>
+        <!-- font size change -->
+         <div class="container">
+           <h1 class="text-danger">Font size change</h1>
+           <button type="button" class="btn btn-info" onclick="fontSize()">Click</button>
+           <p id="fc">Hello world!World is so beautiful.</p>
+         </div> 
+         <!-- show/hide -->
+         <div class="container">
+           <h1 class="text-danger">Click the button to show/hide the text</h1>
+           <button type="button" class="btn btn-info" onclick="textShow()">Show</button>
+           <button type="button" class="btn btn-dark" onclick="textHide()">Hide</button>
+           <p id="sh">Hello world!World is so beautiful.</p>
+         </div>
+         <!--text  -->
+        <div class="container">
+          <h1 class="text-danger">Text message</h1>
+          <button type="button" class="btn btn-info" onclick="textShow()">Text</button>
+          <h2 id="tx"></h2>
+        </div>
+        <!-- add statement -->
+        <div class="container">
+          <h1 class="text-danger">Addition statement</h1>
+          <button type="button" class="btn btn-dark" onclick="addValue()">Value</button>
+          <h2 id="ad"></h2>
+        </div>
+        <!-- string -->
+        <div class="container">
+          <h1 class="text-danger">Java script string</h1>
+          <button type="button" class="btn btn-dark" onclick="textString()">Click</button>
+          <p id="str"></p>
+        </div>
+        <!-- variable -->
+        <div class="container">
+          <h1>JavaScript variable</h1>
+          <button type="button" class="btn btn-dark" onclick="varValue()">Variable</button>
+          <p id="va"></p>
+        </div>
+        <!-- operator -->
+        <div class="container">
+          <h1 class="text-danger">JavaScript operator</h1>
+          <button type="button" class="btn btn-dark" onclick="oppValue()">Value</button>
+          <p id="op"></p>
+        </div>
+        <!-- var keyword -->
+        <div class="container">
+          <h2 class="text-danger">The var keyword creates variables</h2>
+          <button type="button" class="btn btn-info" onclick="varKey()">Value</button>
+          <p id="vke"></p>
+        </div>
+        <!-- js case sensitive -->
+        <div class="container">
+          <h2 class="text-danger">JavaScript is case sensitive</h2>
+          <button type="button" class="btn btn-dark" onclick="caseSensitive()">Name</button>
+          <h3 id="casen"></h3>
+        </div>
+        <!-- var example -->
+        <div class="container">
+          <h2 class="text-danger">JavaScript variable</h2>
+          <button type="button" class="btn btn-info" onclick="vEx()">value</button>
+          <p id="vex"></p>
+        </div>
+        <!-- const ex -->
+        <div class="container">
+          <h2 class="text-danger">const keyword</h2>
+          <button type="button" class="btn btn-dark" onclick="consVar()">Total</button>
+          <p id="cons"></p>
+        </div>
+        <!-- const err -->
+        <div class="container">
+          <h2 class="text-danger">const keyword must be assigned</h2>
+          <button type="button" class="btn btn-dark" onclick="conErr()">Click</button>
+          <p id="cerr"></p>
+        </div>
+        <!-- ** operator -->
+        <div class="container">
+          <h2 class="text-danger">The exponentiation operator (**) raises the first operand to the power of the second operand.</h2>
+          <button type="button" class="btn btn-dark" onclick="exOp()">Power</button>
+          <p id="pow"></p>
+        </div>
+        <!-- ** operator math -->
+        <div class="container">
+          <h2 class="text-danger">Math.pow</h2>
+          <button type="button" class="btn btn-dark" onclick="mpOp()">Power</button>
+          <p id="mp"></p>
+        </div>
+        <!--remainder value -->
+        <div class="container">
+          <h2 class="text-danger">Remainder value</h2>
+          <button type="button" class="btn btn-dark" onclick="reOp()">Remainder</button>
+          <p id="re"></p>
+        </div>
+        <!-- ++ operator -->
+        <div class="container">
+          <h2 class="text-danger">Increment ++ operator</h2>
+          <button type="button" class="btn btn-dark" onclick="inOp()">Increment</button>
+          <p id="in"></p>
+        </div>
+        <!-- operator precedence -->
+        <div class="container">
+          <h2 class="text-danger">Multiplication has precedence over addition</h2>
+          <button type="button" class="btn btn-dark" onclick="preOp()">value</button>
+          <p id="pre"></p>
+        </div>
+        <!--assignment op -->
+        <div class="container">
+          <h2 class="text-danger">assignment operator</h2>
+          <button type="button" class="btn btn-dark" onclick="asOp()">value</button>
+          <p id="as"></p>
+        </div>
+        <!--boolean datatype -->
+        <div class="container">
+          <h2 class="text-danger">Booleans can have two values: true or false:</h2>
+          <button type="button" class="btn btn-dark" onclick="booleaData()">value</button>
+          <p id="boolea"></p>
+        </div>
+
+
+
+
+    <!-- js link -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
